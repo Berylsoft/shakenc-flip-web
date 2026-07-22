@@ -1,4 +1,4 @@
-import { initSync, Custom } from "./wasm/cshake_web.js";
+import { Custom } from "./wasm/cshake_web.js";
 
 declare global {
     var calc: typeof doCalc;

@@ -1,66 +1,25 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>用cshake256算法抛硬币</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            background-color: #f0f2f5;
-            margin: 0;
-        }
-        .container {
-            background: white;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            text-align: center;
-        }
-        input[type="text"] {
-            padding: 10px;
-            width: 300px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        button {
-            padding: 10px 20px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 16px;
-            transition: background 0.3s;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-        p {
-            color: #666;
-            font-size: 14px;
-            margin-top: 15px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
 
+<body>
     <div class="container">
         <h2>用cshake256算法抛硬币</h2>
         <input type="text" id="input" placeholder="请输入文本">
         <br>
         <button onclick="calc()">抛硬币！</button>
         <h3 id="output"></h3>
-        <p>空的输入会永远输出相同的结果。</p>
-        <p>为了保持和<code>shakenc</code> CLI相同的结果，<br><code>custom_string</code>是<code>__shakenc__random-generator</code>。</p>
+        <p>相同的输入（包括空的输入）会永远输出相同的结果。</p>
+        <p>为了保持和<code>shakenc</code> CLI相同的结果，<br><code>custom_string</code>是<code>__shakenc__random-generator</code>。
+        </p>
     </div>
-
-    <script type="module" src="main.js"></script>
+    <script src="main.js"></script>
 </body>
+
 </html>
