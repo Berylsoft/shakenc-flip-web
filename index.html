@@ -11,9 +11,10 @@
 <body>
     <div class="container">
         <h2>用cshake256算法抛硬币</h2>
-        <input type="text" id="input" placeholder="请输入文本">
+        <textarea id="input" rows="5" placeholder="请输入文本"></textarea>
         <br>
-        <button onclick="calc()">抛硬币！</button>
+        <button onclick="doCalc()">抛硬币！</button>
+        <button onclick="addTime()">添加时间</button>
         <h3 id="output"></h3>
         <p>相同的输入（包括空的输入）会永远输出相同的结果。</p>
         <p>为了保持和<code>shakenc</code> CLI相同的结果，<br><code>custom_string</code>是<code>__shakenc__random-generator</code>。
