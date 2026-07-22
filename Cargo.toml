@@ -1,0 +1,15 @@
+[package]
+name = "shakenc-flip-web"
+version = "0.1.0"
+edition = "2021"
+authors = ["stackinspector"]
+license = "MPL-2.0"
+repository = "https://github.com/Berylsoft/keccak-state"
+
+[lib]
+path = "lib.rs"
+crate-type = ["cdylib"]
+
+[dependencies]
+wasm-bindgen = "0.2"
+cshake = { git = "https://github.com/Berylsoft/keccak-state", branch = "nightly" }

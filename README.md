@@ -2,14 +2,9 @@
 
 ## build
 
-在`keccak-state`项目下：
 ```
-cargo build -p cshake-web --target wasm32-unknown-unknown --release
-```
-
-在本项目下：
-```
-wasm-bindgen --target web --out-dir ./wasm "path-to-rust-target/wasm32-unknown-unknown/release/cshake_web.wasm"
+cargo build --target wasm32-unknown-unknown --release
+wasm-bindgen --target web --out-dir ./wasm "path-to-rust-target/wasm32-unknown-unknown/release/shakenc_flip_web.wasm"
 esbuild --minify-whitespace --minify-syntax --format=iife --charset=utf8 --bundle main.ts --outdir=.
 ```
 
