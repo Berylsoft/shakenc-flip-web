@@ -1,4 +1,6 @@
-import { flip } from "./wasm/shakenc_flip_web.js";
+import init, { flip } from "./shakenc_flip_web.js";
+
+await init();
 
 const input_element = document.getElementById("input")! as HTMLTextAreaElement;
 const output_element = document.getElementById("output")!;
