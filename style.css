@@ -58,12 +58,14 @@ button {
     background-color: #0056b3;
 }
 
-#add-time, #clear {
+#add-time,
+#clear {
     background-color: #6c757d;
     color: white;
 }
 
-#add-time:hover, #clear:hover {
+#add-time:hover,
+#clear:hover {
     background-color: #5a6268;
 }
 
