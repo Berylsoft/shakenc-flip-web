@@ -1,4 +1,4 @@
-import init, { flip } from "./shakenc_flip_web.js";
+import init, { flip } from "./dist/shakenc_flip_web.js";
 
 await init();
 
