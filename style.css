@@ -49,12 +49,12 @@ button {
     transition: background 0.3s, opacity 0.3s;
 }
 
-#do-calc {
+#flip {
     background-color: #007bff;
     color: white;
 }
 
-#do-calc:hover {
+#flip:hover {
     background-color: #0056b3;
 }
 
