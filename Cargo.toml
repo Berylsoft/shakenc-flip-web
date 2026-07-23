@@ -1,10 +1,10 @@
 [package]
 name = "shakenc-flip-web"
 version = "0.1.0"
-edition = "2021"
+edition = "2024"
 authors = ["stackinspector"]
 license = "MPL-2.0"
-repository = "https://github.com/Berylsoft/keccak-state"
+repository = "https://github.com/Berylsoft/shakenc-flip-web"
 
 [lib]
 path = "lib.rs"
